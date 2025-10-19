@@ -1,0 +1,75 @@
+{
+  "disk_sizes": [
+    {
+      "name": "Kichik (10 GB)",
+      "size_mb": 10240,
+      "size_gb": 10,
+      "description": "Kichik loyihalar uchun"
+    },
+    {
+      "name": "O'rta (20 GB)",
+      "size_mb": 20480,
+      "size_gb": 20,
+      "description": "Standart ishlatish uchun"
+    },
+    {
+      "name": "Katta (50 GB)",
+      "size_mb": 51200,
+      "size_gb": 50,
+      "description": "Katta loyihalar uchun"
+    },
+    {
+      "name": "Juda katta (100 GB)",
+      "size_mb": 102400,
+      "size_gb": 100,
+      "description": "Juda katta loyihalar uchun"
+    },
+    {
+      "name": "Server (200 GB)",
+      "size_mb": 204800,
+      "size_gb": 200,
+      "description": "Server loyihalar uchun"
+    },
+    {
+      "name": "Enterprise (500 GB)",
+      "size_mb": 512000,
+      "size_gb": 500,
+      "description": "Enterprise loyihalar uchun"
+    }
+  ],
+  "disk_formats": {
+    "VirtualBox": [
+      {
+        "name": "VDI",
+        "extension": ".vdi",
+        "description": "VirtualBox Dynamic Image"
+      },
+      {
+        "name": "VMDK",
+        "extension": ".vmdk",
+        "description": "VMware Virtual Machine Disk"
+      },
+      {
+        "name": "VHD",
+        "extension": ".vhd",
+        "description": "Microsoft Virtual Hard Disk"
+      }
+    ],
+    "Hyper-V": [
+      {
+        "name": "VHDX",
+        "extension": ".vhdx",
+        "description": "Microsoft Virtual Hard Disk v2"
+      },
+      {
+        "name": "VHD",
+        "extension": ".vhd",
+        "description": "Microsoft Virtual Hard Disk v1"
+      }
+    ]
+  },
+  "default_paths": {
+    "VirtualBox": "~/VirtualBox VMs",
+    "Hyper-V": "~/Documents/Virtual Machines"
+  }
+}

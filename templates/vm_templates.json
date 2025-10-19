@@ -1,0 +1,66 @@
+{
+  "virtualbox_templates": [
+    {
+      "name": "Ubuntu Desktop",
+      "os_type": "Ubuntu_64",
+      "memory": 2048,
+      "cpus": 2,
+      "description": "Ubuntu desktop virtual mashina",
+      "hard_disk_size": "20GB"
+    },
+    {
+      "name": "Windows 10",
+      "os_type": "Windows10_64",
+      "memory": 4096,
+      "cpus": 2,
+      "description": "Windows 10 virtual mashina",
+      "hard_disk_size": "40GB"
+    },
+    {
+      "name": "CentOS Server",
+      "os_type": "RedHat_64",
+      "memory": 1024,
+      "cpus": 1,
+      "description": "CentOS server virtual mashina",
+      "hard_disk_size": "15GB"
+    },
+    {
+      "name": "Debian Server",
+      "os_type": "Debian_64",
+      "memory": 1024,
+      "cpus": 1,
+      "description": "Debian server virtual mashina",
+      "hard_disk_size": "10GB"
+    }
+  ],
+  "hyperv_templates": [
+    {
+      "name": "Ubuntu Server",
+      "memory": 2048,
+      "cpus": 2,
+      "description": "Ubuntu server virtual mashina",
+      "generation": 2
+    },
+    {
+      "name": "Windows Server 2019",
+      "memory": 4096,
+      "cpus": 2,
+      "description": "Windows Server 2019 virtual mashina",
+      "generation": 2
+    },
+    {
+      "name": "CentOS 8",
+      "memory": 2048,
+      "cpus": 2,
+      "description": "CentOS 8 virtual mashina",
+      "generation": 2
+    },
+    {
+      "name": "Debian 10",
+      "memory": 1024,
+      "cpus": 1,
+      "description": "Debian 10 virtual mashina",
+      "generation": 2
+    }
+  ]
+}

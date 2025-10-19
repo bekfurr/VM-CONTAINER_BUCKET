@@ -1,0 +1,22 @@
+{
+    "theme": "dark",
+    "language": "uz",
+    "auto_refresh": true,
+    "refresh_interval": 30,
+    "docker": {
+        "auto_connect": true,
+        "default_ports": "8080:80"
+    },
+    "virtualbox": {
+        "auto_connect": true,
+        "default_memory": 1024,
+        "default_cpus": 1
+    },
+    "hyperv": {
+        "auto_connect": true,
+        "default_memory": 1024,
+        "default_cpus": 1
+    },
+    "enable_logging": false,
+    "log_path": "logs/vm-container-bucket.log"
+}

@@ -1,0 +1,83 @@
+{
+  "templates": [
+    {
+      "name": "Ubuntu Server",
+      "image": "ubuntu:latest",
+      "description": "Ubuntu server konteyner",
+      "ports": "22:22",
+      "environment": {},
+      "volumes": {}
+    },
+    {
+      "name": "Nginx Web Server",
+      "image": "nginx:latest",
+      "description": "Nginx web server",
+      "ports": "80:80,443:443",
+      "environment": {},
+      "volumes": {}
+    },
+    {
+      "name": "MySQL Database",
+      "image": "mysql:8.0",
+      "description": "MySQL ma'lumotlar bazasi",
+      "ports": "3306:3306",
+      "environment": {
+        "MYSQL_ROOT_PASSWORD": "rootpassword",
+        "MYSQL_DATABASE": "mydb"
+      },
+      "volumes": {}
+    },
+    {
+      "name": "PostgreSQL Database",
+      "image": "postgres:15",
+      "description": "PostgreSQL ma'lumotlar bazasi",
+      "ports": "5432:5432",
+      "environment": {
+        "POSTGRES_PASSWORD": "postgres",
+        "POSTGRES_DB": "mydb"
+      },
+      "volumes": {}
+    },
+    {
+      "name": "Redis Cache",
+      "image": "redis:7-alpine",
+      "description": "Redis cache server",
+      "ports": "6379:6379",
+      "environment": {},
+      "volumes": {}
+    },
+    {
+      "name": "Node.js App",
+      "image": "node:18-alpine",
+      "description": "Node.js ilova",
+      "ports": "3000:3000",
+      "environment": {
+        "NODE_ENV": "development"
+      },
+      "volumes": {}
+    },
+    {
+      "name": "Python App",
+      "image": "python:3.11-slim",
+      "description": "Python ilova",
+      "ports": "8000:8000",
+      "environment": {
+        "PYTHONUNBUFFERED": "1"
+      },
+      "volumes": {}
+    },
+    {
+      "name": "WordPress",
+      "image": "wordpress:latest",
+      "description": "WordPress CMS",
+      "ports": "8080:80",
+      "environment": {
+        "WORDPRESS_DB_HOST": "db",
+        "WORDPRESS_DB_USER": "wordpress",
+        "WORDPRESS_DB_PASSWORD": "wordpress",
+        "WORDPRESS_DB_NAME": "wordpress"
+      },
+      "volumes": {}
+    }
+  ]
+}

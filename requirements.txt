@@ -1,0 +1,6 @@
+docker
+psutil
+tkinter-tooltip
+Pillow
+pywin32
+requests
